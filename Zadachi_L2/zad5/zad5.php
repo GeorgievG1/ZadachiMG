@@ -11,8 +11,7 @@
                 <option value="cloud">Cloudy</option>
             </select>            
              <button type="submit"  value="Submit">Submit</button> 
-            </form>
-        
+            </form>        
      <?php
             if(isset($_POST["weather"])){
             $weather=$_POST["weather"];            
