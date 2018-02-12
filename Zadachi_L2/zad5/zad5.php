@@ -13,6 +13,9 @@
              <button type="submit"  value="Submit">Submit</button> 
             </form>        
      <?php
+           if(!$_POST){
+                echo '<div style="margin-top: 40px;"><p style="font-size: 20px;">Моля изберете опция от падащото меню!</p></div>';
+                      };
             if($_POST){
             $weather=$_POST["weather"];            
             switch($weather){
@@ -39,10 +42,7 @@
                 default:                   
                     break;
                             };
-                                        };
-            if(!isset($_POST["weather"])){
-                echo '<div style="margin-top: 40px;"><p style="font-size: 20px;">Моля изберете опция от падащото меню!</p></div>';
-                                        };
+                                        };         
     ?>
     </body>    
 </html>
