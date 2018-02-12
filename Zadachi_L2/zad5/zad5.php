@@ -13,28 +13,28 @@
              <button type="submit"  value="Submit">Submit</button> 
             </form>        
      <?php
-            if(isset($_POST["weather"])){
+            if($_POST){
             $weather=$_POST["weather"];            
             switch($weather){
                 case "rain":
                     echo '<div style="display: inline-block; vertical-align: middle; margin-top: 30px;"><img style="width:130px; height:100px" src="pic/rain.jpg"/></div>';
-                    echo '<div style="display: inline-block; vertical-align: middle; margin-left: 20px;"><p style="font-size: 20px;">' . "It's raining outside!" . '</p></div>';//конкатенация, за да мога да ползвам единичните кавички за It's в echo
+                    echo '<div style="display: inline-block; vertical-align: middle; margin-left: 20px;"><p style="font-size: 20px;">It\'s raining outside!</p></div>';//конкатенация, за да мога да ползвам единичните кавички за It's в echo
                     break;
                 case "sun":
                     echo '<div style="display: inline-block; vertical-align: middle; margin-top: 30px;"><img style="width:130px; height:100px" src="pic/sun.jpg"/></div>';
-                    echo '<div style="display: inline-block; vertical-align: middle; margin-left: 20px;"><p style="font-size: 20px;">' . "It's sunny outside!" . '</p></div>';
+                    echo '<div style="display: inline-block; vertical-align: middle; margin-left: 20px;"><p style="font-size: 20px;">It\'s sunny outside!</p></div>';
                     break;
                 case "fog":
                     echo '<div style="display: inline-block; vertical-align: middle; margin-top: 30px;"><img style="width:130px; height:100px" src="pic/fog.jpg"/></div>';
-                    echo '<div style="display: inline-block; vertical-align: middle; margin-left: 20px;"><p style="font-size: 20px;">' . "It's foggy outside!" . '</p></div>';
+                    echo '<div style="display: inline-block; vertical-align: middle; margin-left: 20px;"><p style="font-size: 20px;">It\'s foggy outside!</p></div>';
                     break;
                 case "snow":
                     echo '<div style="display: inline-block; vertical-align: middle; margin-top: 30px;"><img style="width:130px; height:100px" src="pic/snow.png"/></div>';
-                    echo '<div style="display: inline-block; vertical-align: middle; margin-left: 20px;"><p style="font-size: 20px;">' . "It's snowing outside!" . '</p></div>';
+                    echo '<div style="display: inline-block; vertical-align: middle; margin-left: 20px;"><p style="font-size: 20px;">It\'s snowing outside!</p></div>';
                     break;
                 case "cloud":
                     echo '<div style="display: inline-block; vertical-align: middle; margin-top: 30px;"><img style="width:130px; height:100px" src="pic/cloud.png"/></div>';
-                    echo '<div style="display: inline-block; vertical-align: middle; margin-left: 20px;"><p style="font-size: 20px;">' . "It's cloudy outside!" . '</p></div>';
+                    echo '<div style="display: inline-block; vertical-align: middle; margin-left: 20px;"><p style="font-size: 20px;">It\'s cloudy outside!</p></div>';
                     break;
                 default:                   
                     break;
